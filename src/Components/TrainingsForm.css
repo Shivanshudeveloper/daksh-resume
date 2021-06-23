@@ -1,0 +1,152 @@
+.field-train {
+  position: relative;
+  padding: 15px 0 0;
+  width: 384px;
+  margin: auto;
+}
+.name {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.time {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.description {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.name::placeholder {
+  color: transparent;
+}
+.time::placeholder {
+  color: transparent;
+}
+.description::placeholder {
+  color: transparent;
+}
+.name:placeholder-shown ~ .form__label-name {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.time:placeholder-shown ~ .form__label-time {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.description:placeholder-shown ~ .form__label-desc {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.form__label-name {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-time {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-desc {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.name:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.time:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.description:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.name:focus ~ .form__label-name {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.time:focus ~ .form__label-time {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.description:focus ~ .form__label-desc {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+
+.name:required,
+.name:invalid {
+  box-shadow: none;
+}
+
+.time:required,
+.time:invalid {
+  box-shadow: none;
+}
+
+.description:required,
+.description:invalid {
+  box-shadow: none;
+}

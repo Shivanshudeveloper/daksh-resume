@@ -1,0 +1,104 @@
+.field-skill {
+  position: relative;
+  padding: 15px 0 0;
+  width: 384px;
+  margin: auto;
+  display: flex;
+}
+.name {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.proficiency {
+  width: 50%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.name::placeholder {
+  color: transparent;
+}
+.proficiency::placeholder {
+  color: transparent;
+}
+.name:placeholder-shown ~ .form__label-name {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.proficiency:placeholder-shown ~ .form__label-prof {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.form__label-name {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-prof {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.name:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.proficiency:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.name:focus ~ .form__label-name {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.proficiency:focus ~ .form__label-prof {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+
+.name:required,
+.name:invalid {
+  box-shadow: none;
+}
+
+.proficiency:required,
+.proficiency:invalid {
+  box-shadow: none;
+}

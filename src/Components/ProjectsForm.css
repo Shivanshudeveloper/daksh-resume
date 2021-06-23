@@ -1,0 +1,247 @@
+.field-project {
+  position: relative;
+  padding: 15px 0 0;
+  width: 384px;
+  margin: auto;
+}
+.title {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.theme {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.technology {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.teamSize {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.role {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.title::placeholder {
+  color: transparent;
+}
+.theme::placeholder {
+  color: transparent;
+}
+.technology::placeholder {
+  color: transparent;
+}
+.teamSize::placeholder {
+  color: transparent;
+}
+.role::placeholder {
+  color: transparent;
+}
+.title:placeholder-shown ~ .form__label-title {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.theme:placeholder-shown ~ .form__label-theme {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.technology:placeholder-shown ~ .form__label-tech {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.teamSize:placeholder-shown ~ .form__label-tsize {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.role:placeholder-shown ~ .form__label-role {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.form__label-title {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-theme {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-tech {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-tsize {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-role {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.title:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.theme:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.technology:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.teamSize:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.role:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.title:focus ~ .form__label-title {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.theme:focus ~ .form__label-theme {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.technology:focus ~ .form__label-tech {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.teamSize:focus ~ .form__label-tsize {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.role:focus ~ .form__label-role {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+
+.title:required,
+.title:invalid {
+  box-shadow: none;
+}
+
+.theme:required,
+.theme:invalid {
+  box-shadow: none;
+}
+
+.technology:required,
+.technology:invalid {
+  box-shadow: none;
+}
+
+.teamSize:required,
+.teamSize:invalid {
+  box-shadow: none;
+}
+
+.role:required,
+.role:invalid {
+  box-shadow: none;
+}

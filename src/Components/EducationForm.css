@@ -1,0 +1,201 @@
+.field-edu {
+  position: relative;
+  padding: 15px 0 0;
+  width: 384px;
+  margin: auto;
+}
+.class {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.year {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.school {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.marks {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  outline: 0;
+  font-size: 16px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.class::placeholder {
+  color: transparent;
+}
+.year::placeholder {
+  color: transparent;
+}
+.school::placeholder {
+  color: transparent;
+}
+.marks::placeholder {
+  color: transparent;
+}
+.class:placeholder-shown ~ .form__label-class {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.year:placeholder-shown ~ .form__label-year {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.school:placeholder-shown ~ .form__label-school {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.marks:placeholder-shown ~ .form__label-marks {
+  font-size: 18px;
+  cursor: text;
+  top: 20px;
+}
+.form__label-class {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-year {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-school {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.form__label-marks {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.class:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.year:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.school:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.marks:focus {
+  padding-bottom: 6px;
+  font-weight: 200;
+  border-width: 1px;
+  border-image: linear-gradient(to right, rgb(0, 188, 212), rgb(0, 188, 212));
+  border-image-slice: 1;
+}
+.class:focus ~ .form__label-class {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.year:focus ~ .form__label-year {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.school:focus ~ .form__label-school {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+.marks:focus ~ .form__label-marks {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: rgb(0, 188, 212);
+  font-weight: 500;
+}
+
+.class:required,
+.class:invalid {
+  box-shadow: none;
+}
+
+.school:required,
+.school:invalid {
+  box-shadow: none;
+}
+
+.marks:required,
+.marks:invalid {
+  box-shadow: none;
+}
+
+.year:required,
+.year:invalid {
+  box-shadow: none;
+}
